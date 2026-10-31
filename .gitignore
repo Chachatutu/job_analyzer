@@ -1,0 +1,8 @@
+__pycache__/
+*.__pyc 
+.venv/
+.venv
+.env
+.env.*
+jobs1.json
+matched_jobs.json
