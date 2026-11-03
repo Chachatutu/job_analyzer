@@ -5,7 +5,7 @@
 已实现从json的导入 以及将筛选后的岗位导出为json
 
 命令行
-    pyhton main.py  
+    python main.py  
     --city    按城市筛选
     --keyword 按关键词筛选
     --input   从路径中导入
