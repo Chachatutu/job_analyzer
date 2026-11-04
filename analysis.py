@@ -32,3 +32,11 @@ def count_jobs_by_city(jobs: list) -> dict:
             counts[city]=0
         counts[city]+=1
     return counts
+
+def deduplicate_jobs(jobs: list) -> list:
+    result: list = []
+    for job in jobs:
+        if not job in result:
+            result.append(job)
+
+    return result
