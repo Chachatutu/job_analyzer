@@ -5,7 +5,8 @@ import argparse
 from analysis import(
     filter_jobs_by_city,
     search_jobs_by_key,
-    count_jobs_by_city
+    count_jobs_by_city,
+    deduplicate_jobs
 )
             
 
@@ -37,7 +38,7 @@ def main() ->None :
         print(error)
         return
     
-    matched_jobs = data
+    matched_jobs = deduplicate_jobs(data)
     if args.city or args.keyword:
         if args.city :
             matched_jobs = filter_jobs_by_city(matched_jobs,args.city)
